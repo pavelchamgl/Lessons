@@ -22,7 +22,7 @@ public class Calculator {
 		private double result;
 
 			/**
-			 * @method add - Сложене
+			 * Сложене.
 			 * @param first - первый аргумент
 			 * @param second - второй аргумент
 			 */

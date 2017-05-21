@@ -14,7 +14,7 @@ public class Max {
      * @param first - первый аргумент
 	 * @param second - второй аргумент
 	 * @method max определет максимум из двух чисел
-	 * @return result - результат
+	 * @return return - результат
      */
 
     public int max(int first, int second) {

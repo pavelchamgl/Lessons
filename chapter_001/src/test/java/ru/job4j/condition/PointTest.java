@@ -17,8 +17,8 @@ public class PointTest {
 	*/
 	@Test
     public void searchCondition() {
-		Point pointXY = new Point();
-		pointXY.point(3, 18);
+		Point pointXY = new Point(3, 18);
+		//pointXY.point(3, 18);
 		assertThat(pointXY.is(5, 3), is(true));
 	}
 }

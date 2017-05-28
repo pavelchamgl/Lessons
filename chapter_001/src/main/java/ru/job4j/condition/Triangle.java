@@ -6,10 +6,9 @@ package ru.job4j.condition;
  * @since 26.05.2017
  */
 public class Triangle {
-/**
-* class Triangle.
-* @param точка "а" класса Point с описанием координат x и y
-*/
+	/**
+	* @param точка "а" класса Point с описанием координат x и y
+	*/
 	private Point a;
 	/**
 	* @param точка "b" класса Point с описанием координат x и y
@@ -31,18 +30,24 @@ public class Triangle {
 			this.c = c;
 		}
 		/**
+		* method distance метод определения расстояния между точеками.
+		* @param a - координаты первой точки
+		* @param b - координаты второй точки
+		* @return расстояние междуточками
+		*/
+		public double distance(Point a, Point b) {
+			return Math.sqrt(Math.pow((a.getX() - b.getX()), 2) + Math.pow((a.getY() - b.getY()), 2));
+		}
+		/**
 		* method метод вычисления площади треугольника по трём точкам с контролем.
 		* невозможности построить треугольник с заданными точками координатами.
-		* distanceAB - расстояние от точки а до точки b
-		* distanceAC - расстояние от точки b до точки c
-		* distanceBC - расстояние от точки c до точки a
 		* perimeter - расчет периметра треугольника
 		* @return area - площадь треугольника
 		*/
 		public double area() {
-			double distanceAB = Math.sqrt(Math.pow((a.getX() - b.getX()), 2) + Math.pow((a.getY() - b.getY()), 2));
-			double distanceAC = Math.sqrt(Math.pow((a.getX() - c.getX()), 2) + Math.pow((a.getY() - c.getY()), 2));
-			double distanceBC = Math.sqrt(Math.pow((b.getX() - c.getX()), 2) + Math.pow((b.getY() - c.getY()), 2));
+			double distanceAB = distance(a, b);
+			double distanceAC = distance(a, c);
+			double distanceBC = distance(b, c);
 			double perimeter = (distanceAB + distanceAC + distanceBC) / 2;
 			double area = Math.sqrt(perimeter * (perimeter - distanceAB) * (perimeter - distanceAC) * (perimeter - distanceBC));
 				if (area == 0) {

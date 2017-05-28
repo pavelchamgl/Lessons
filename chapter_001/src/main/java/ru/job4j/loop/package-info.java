@@ -1,8 +1,8 @@
 /**
- * Package for Max task.
+ * Package for loop task.
  *
  * @author Pavel Ivanov (pavel.ivanov.060988@gmail.com)
  * @version $Id$
- * @since 15.05.2017
+ * @since 28.05.2017
  */
-package ru.job4j.max;
+package ru.job4j.loop;

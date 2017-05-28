@@ -1,5 +1,5 @@
 /**
- * Package for calculate task.
+ * Package for test calculate task.
  *
  * @author Pavel Ivanov (pavel.ivanov.060988@gmail.com)
  * @version $Id$
